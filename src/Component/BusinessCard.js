@@ -1,30 +1,31 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class BusinessCard extends Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        return (
-            <center>
-                <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
-                ]<div class="ui card">
-                    <div class="image"><img src="/images/avatar/large/matthew.png" /></div>
-                    <div class="content">
-                        <div class="header">{this.props.fname}</div>
-                        <div class="meta"><span class="date">Joined in 2015</span></div>
-                        <div class="description">Matthew is a musician living in Nashville.</div>
-                    </div>
-                    <div class="extra content">
-                        <a>
-                            <i aria-hidden="true" class="user icon"></i>
-                            22 Friends
-    </a>
-                    </div>
+  constructor(props){
+      super(props);
+  }
+  render() {
+    return (
+      <center style={{ paddingTop: "20%" }}>
+          <div >
+            <div class="ui card raised">
+                <div class=" content" style={{
+                            backgroundImage:
+                            "url(" +
+                            "https://previews.123rf.com/images/nalinn/nalinn1504/nalinn150401690/38910529-collection-of-cute-giant-panda-faces-page-border-frame.jpg" +")",backgroundSize: "cover"}}>
+                    <div> hello</div>
+                    <div class="header"></div>
+                    <div class="meta"><span class="date">Joined in 2015</span></div>
+                    <div class="description"> is a musician living in Nashville.</div>
+                    <h1>
+                    <i aria-hidden="true" class="user icon"></i> {this.props.fname} 
+                    </h1>
+                    
                 </div>
-                
-            </center>
-        )
-    }
+            </div>  
+        </div>
+      </center>
+    );
+  }
 }
 export default BusinessCard;
