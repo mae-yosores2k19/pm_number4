@@ -28,7 +28,7 @@ class Registration extends Component{
    render() {
        if (!this.state.register) {
            return (
-               <div>
+               <div >
                    <center>
                        <form>
                            <input placeholder="First Name.." onChange={e => this.setState({ fname: e.target.value })}></input><br /><br />
@@ -43,7 +43,7 @@ class Registration extends Component{
            )
        } else {
            return (
-               <BusinessCard />
+               <BusinessCard fname={this.state.fname} />
            )
        }
    }
